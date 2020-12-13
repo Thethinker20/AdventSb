@@ -1,0 +1,138 @@
+.masInfo{
+    width: 100%;
+    height: 30vh;
+    margin-top: -7.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#FEFFC0; 
+
+    .masInfoSection{
+        margin-top: 8%;
+        width: 80%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        .masInfoTitle{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 25px;
+            color: #000000;
+        }
+        .masInfoPB{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 50%;
+            .masInfoP{
+                font-style: normal;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 29px;
+                display: flex;
+                align-items: center;
+                color: #000000;                
+            }
+            .masInfoButton{
+                width: 10%;
+                height: 90%;
+                background: #C2E7DA;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #7A7575;
+                margin-left:33%;     
+                cursor: pointer;         
+            }
+            .masInfoButton:hover{
+                transform: scale(1.1);
+            }
+
+            .modal1 {
+                display: none;
+                position: fixed;
+                z-index: 1;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                overflow: auto;
+                background-color: rgba(0, 0, 0, 0.5);
+                z-index: 5000;
+
+                .modal-content1 {
+                    margin: 10% auto;
+                    width: 60%;
+                    animation-name: modalopen;
+                    animation-duration: 1s;
+
+                    .modal-header1 {
+                        background:  #a0aa47;
+                        padding: 0px;
+                        color: #fff;
+                        left: 50px;
+                        top: 25px;
+                        box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.5);
+
+                        .modal-headerT1{
+                            position: relative;
+                            margin: 0px;
+                            font-size: 23px;
+                            font-weight: 400;
+                            padding: 20px;
+                            display: flex;
+                            justify-content: center;
+                        }
+
+                        .closeBtn1 {
+                            position: absolute;
+                            float: left;
+                            font-size: 30px;
+                            color: #fff;
+                            cursor: pointer;
+                            left: 95%;
+                            top: 5px;
+                          }
+                    }
+                    .modal-header1:hover{
+                        background:#E3F067;
+                    }
+
+                    .modal-body1 {
+                        padding: 50px 20px;
+                        background: #fff;
+                        .modal-title1{
+                            position: relative;
+                            margin: 0px;
+                            font-size: 23px;
+                            font-weight: 400;
+                            padding: 20px;
+                            display: flex;
+                            justify-content: center;
+                            color: black;
+                        }
+                        .modal-text1{
+                            position: relative;
+                            margin: 0px;
+                            font-size: 15px;
+                            font-weight: 400;
+                            padding: 20px;
+                            display: flex;
+                            justify-content: center;
+                            text-align: center;
+                            color: black;
+                        }
+
+
+                    }
+                      
+                }
+            }
+        }
+    }
+}

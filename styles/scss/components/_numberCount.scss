@@ -1,0 +1,97 @@
+.numberCount{
+    width: 100%;
+    height: 30vh;
+    margin-top: -8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .numberSection{
+        width: 80%;
+        height: 80%;
+    
+        .number-content{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            height: 100%;
+
+            .number-box{
+                background: #E3F067;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.5);
+                .numberP{
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                    line-height: 1.5;
+                    color: #373737;
+                    width: 70%;
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                    @media all and (max-width:786px){
+                        font-size: 1.5rem;
+                    }
+                }
+                .numberP[data-scroll='in']{
+                    animation: slideDown 1s ease-in-out;
+                }
+                .numberT{
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                    line-height: 1.5;
+                    color: #373737;
+                    width: 70%;
+                    display: flex;
+                    justify-content: center;
+                    animation: slideDown 1.5s ease-in-out;
+                    @media all and (max-width:786px){
+                        font-size: 1.5rem;
+                    }
+                }
+                .numberP1{
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                    line-height: 1.5;
+                    color: #373737;
+                    width: 70%;
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                    @media all and (max-width:786px){
+                        font-size: 1.5rem;
+                    }
+                }
+                .numberP1[data-scroll='in']{
+                    animation: slideDown 1.3s ease-in-out;
+                }
+                .numberP2{
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                    line-height: 1.5;
+                    color: #373737;
+                    width: 70%;
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                    @media all and (max-width:786px){
+                        font-size: 1.5rem;
+                    }
+                }
+                .numberP2[data-scroll='in']{
+                    animation: slideDown 1.5s ease-in-out;
+                }
+            }
+        }
+    }
+}
+@keyframes slideDown{
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}

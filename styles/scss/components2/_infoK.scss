@@ -1,0 +1,143 @@
+.tInfoK{
+    width: 100%;
+    height: 70vh;
+    margin-top: 10%;
+    .tInfoTitleK{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding:5%;
+        .tInfoTextK{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 38px;
+            line-height: 145px;
+            color: #000000;
+        }
+        .tInfoPK{
+            width: 35%;
+            font-weight: lighter;
+            font-size: 22px;
+            text-align: center;
+            color: #000000;
+        }
+    }
+    .tInfoIK{
+        width: 100%;
+        height: 30vh;
+        .tInfoISectionK{
+            width: 100%;
+            height: 100%;
+            .tInfoI-contentK{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+                height: 100%;
+                .tInfoI-boxK{
+                    background: #D57A66;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .tInfoI-boxContK{
+                        width: 60%;
+                        display: flex;
+                        flex-direction: row;
+                        .tInfoImgK{
+                            height: 5em;
+                            opacity: 0.5;
+                        }
+                        .tInfoITextBK{
+                            display: flex;
+                            flex-direction: column;
+                            width: 60%;
+                            margin-left: 5%;
+                            .tInfoITextK{
+                                font-weight: 500;
+                                font-size: 20px;
+                                line-height: 37px;
+                                color: #ffffff;
+                                padding: 3%;
+                            }
+                            .tInfoIText2K{
+                                font-weight: 600;
+                                font-size: 20px;
+                                color: #ffffff;
+                                padding-left: 3%;
+                            }
+                        }
+                    }
+                }
+                .tInfoI-box1K{
+                    background: #CA6680;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .tInfoI-boxContK{
+                        width: 60%;
+                        display: flex;
+                        flex-direction: row;
+                        .tInfoImgK{
+                            height: 5em;
+                            opacity: 0.5;
+                        }
+                        .tInfoITextBK{
+                            display: flex;
+                            flex-direction: column;
+                            width: 60%;
+                            margin-left: 5%;
+                            .tInfoITextK{
+                                font-weight: 500;
+                                font-size: 20px;
+                                line-height: 37px;
+                                color: #ffffff;
+                                padding: 3%;
+                            }
+                            .tInfoIText2K{
+                                font-weight: 600;
+                                font-size: 20px;
+                                color: #ffffff;
+                                padding-left: 3%;
+                            }
+                        }
+                        
+                    }
+                }
+                .tInfoI-box2K{
+                    background: #C45AB3;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .tInfoI-boxContK{
+                        width: 60%;
+                        display: flex;
+                        flex-direction: row;
+                        .tInfoImgK{
+                            height: 5em;
+                            opacity: 0.5;
+                        }
+                        .tInfoITextBK{
+                            display: flex;
+                            flex-direction: column;
+                            width: 60%;
+                            margin-left: 5%;
+                            .tInfoITextK{
+                                font-weight: 500;
+                                font-size: 20px;
+                                line-height: 37px;
+                                color: #ffffff;
+                                padding: 3%;
+                            }
+                            .tInfoIText2K{
+                                font-weight: 600;
+                                font-size: 20px;
+                                color: #ffffff;
+                                padding-left: 3%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

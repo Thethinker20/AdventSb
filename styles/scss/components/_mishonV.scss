@@ -1,0 +1,208 @@
+.mishon{
+    width: 100%;
+    height: 60vh;
+    margin-top: 10%;
+
+    .mishon1{
+        width: 100%;
+        height: 65px;
+        left: 0px;
+        background: #C2E7DA;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        .mishon1Text{
+            padding-top: 12px;
+            padding-left: 5%;
+            font-weight: bold;
+            font-size: 40px;
+            color: #646464;
+        }
+        .mishon1Text2{
+            padding-top: 35px;
+            padding-left: 20px;
+            font-size: 13px;
+            color: #646464;
+        }
+
+    }
+
+    .mishonB{
+        width: 100%;
+        height: 633px;
+        left:0px;
+        background: #272727;
+
+        .mishonsk {
+            position: relative;
+            display: inline-block;
+            top:60px;
+            .dropbtn {
+                background-color: #C2E7DA ;
+                width: 140px;
+                padding: 12px;
+                font-size: 14px;
+                border: none;
+                cursor: pointer;
+                font-weight: 400;
+                color: #272727;
+            }
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: rgb(232, 255, 246);
+                min-width: 170px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+                .dropdown-contentA {
+                    color: black;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    font-family: Montserrat;
+                    display: block;
+                    font-size: 13px;
+                }
+                .dropdown-contentA:hover {
+                    background-color: rgb(135, 184, 166)
+                }
+            }
+        }
+        .mishonsk:hover .dropdown-content {
+            display: block;
+        }
+          
+        .mishonsk:hover .dropbtn {
+            background-color: rgb(147, 192, 175);
+        }
+    }
+
+    .mishonPText{
+        position: relative;
+        width: 300px;
+        top: 140px;
+        left: 180px;
+        font-size: 32px;
+        line-height: 48px;
+        color: #FFFFFF;
+        letter-spacing: 0.20em;
+        animation: fadeIn 2s ease-in-out;
+        @media all and (max-width: 786px) {
+            left: 56px;
+            font-size: 27px;
+        }
+    }
+    .mishonPText[data-scroll='in']{
+        animation: fadeIn 2.5s ease-in-out;
+    }
+    .mishonPtext2{
+        position: relative;
+        left: 180px;
+        top: 145px;
+        width: 248px;
+        font-size: 11px;
+        line-height: 19px;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        animation: fadeIn 2.5s ease-in-out;
+        @media all and (max-width: 786px) {
+            left: 50px;
+        }
+    }
+    .mishonPtext2[data-scroll='in']{
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .card{
+        cursor: pointer;
+        width: 1000px;
+        height: 500px;
+        z-index: 2;
+         @media all and (max-width: 786px) {
+            width: 355px;
+            height: 500px;
+        }
+    }
+    .card:hover > .front{
+    transform: perspective(600px) rotateY(-180deg);
+    }
+
+.card:hover > .back{
+  transform: perspective(600px) rotateY(0deg);
+}
+    .middle{
+        position: relative;
+        top: 25%;
+        left: 67%;
+        transform: translate(-50%,-50%);
+        @media all and (max-width: 786px) {
+            left: 50%;
+            top: 52%;
+        }
+        .front{
+            width: 90%;
+            height: 100%;
+            overflow: hidden;
+            backface-visibility: hidden;
+            position: absolute;
+            transition: transform .6s linear;
+            transform: perspective(600px) rotateY(0deg);
+           
+            .frontImg{
+                height: 100%;
+                @media all and (max-width: 786px) {
+                    height: 70%;
+                    width: 100%;
+                }
+            }
+        }
+        .back{
+            width: 90%;
+            height: 100%;
+            overflow: hidden;
+            backface-visibility: hidden;
+            position: absolute;
+            transition: transform .6s linear;
+            background: #ffffff;
+            transform: perspective(600px) rotateY(180deg);
+
+            .back-content{
+                position: relative;
+                top: 45%;
+                left: 50%;
+                color: #272727;
+                text-align: center;
+                width: 80%;
+                @media all and (max-width: 786px) {
+                    height: 70%;
+                    width: 100%;
+                }
+                .backText{
+                    font-size: 25px;
+                    padding: 20px;
+                    font-weight: 600;
+                    letter-spacing: 0.09em;
+                    color: #1a1b41;
+                }
+                .backP{
+                    font-size: 16px;
+                    letter-spacing: 0.09em;
+                    color: #1a1b41;
+                    @media all and (max-width: 786px) {
+                        font-size: 12px;
+                        width: 85%;
+                        padding-left: 4em;
+                    }                   
+                }
+            }
+        }
+    }
+}
+
+@keyframes fadeIn{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }

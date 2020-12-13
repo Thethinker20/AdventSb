@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8' />
+<title>Advent school Kalender</title>
+<link href='../javascript/main.css' rel='stylesheet' />
+<link rel='stylesheet' href="../styles/css/styles.css">
+<script>
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+    var d = new Date();
+
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      headerToolbar: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
+      },
+      initialDate: d,
+      navLinks: true, // can click day/week names to navigate views
+      businessHours: true, // display business hours
+      editable: false,
+      selectable: true,
+      events: [
+        {
+          title: 'Dia pais Kórsou',
+          start: '2020-10-10',
+          color: '#F7C59F'
+        },
+        {
+          title: 'Tussenvakantie',
+          start: '2020-10-19',
+          end:'2020-10-23',
+          color: '#2A324B'
+        },
+        {
+          title: 'Kerstvakantie',
+          start: '2020-12-21',
+          end: '2021-01-04',
+          color: '#257e4a'
+        },
+        {
+          title: 'Kinderkarnaval',
+          start: '2021-02-08',
+          color: '#CC2936'
+        },
+        {
+          title: 'Grote karnaval',
+          start: '2021-02-15',
+          end: '2021-02-17',
+          color:'#EBBAB9'
+        },
+        {
+          title: 'Paasvakantie',
+          start: '2021-04-01',
+          end:'2021-04-09'
+        },
+        {
+          //groupId: 'availableForMeeting',
+          title: 'Extra vrije dag',
+          start: '2021-04-26'
+        },
+        {
+          //groupId: 'availableForMeeting',
+          title: 'Koningsdag',
+          start: '2021-04-27',
+          color:'orange'
+        },
+
+        // red areas where no events can be dropped
+        {
+          title: 'Dag van de arbeid',
+          start: '2021-05-01',
+          color: '#ff9f89'
+        },
+        {
+          title: 'Extra vtije dag',
+          start: '2021-05-03',
+          color: '#ff9f89'
+        }
+        ,
+        {
+          title: 'Hemelvaartsvakantie',
+          start: '2021-05-13',
+          end:'2021-05-14',
+          color: '#ff9f89'
+        },
+        {
+          title: 'Vlagdag',
+          start: '2021-07-02',
+          color: '#1A1B41'
+        },
+        {
+          title: 'Grote vakantie',
+          start: '2021-07-12',
+          end:"2021-07-30",
+          color: '#3E6680'
+        }
+      ]
+    });
+
+    calendar.render();
+  });
+
+</script>
+<style>
+
+  body {
+    padding: 0;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+
+  #calendar {
+    margin-top: 10%;
+    max-width: 750px;
+    margin: 0 auto;
+  }
+
+</style>
+</head>
+<body>
+    <nav class="navC">
+        <div class="containerC">
+            <div class="logoC">
+                <img class="nav-logoC" src="../Images/logoBlack.png" alt="">
+            </div>
+            <div id="mainListDivC" class="main_listC">
+                <ul class="navlinksC">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../Pages/Skolnan.html">Skolnan</a>
+                    <li><a href="../Pages/AdventKalender.html">Kalender</a></li>
+                    <li><a href="../Contact/index.html">Kontaktá nos</a></li>
+                    <li><a href="../Pages/Login.html">LogIn</a></li>
+                </ul>
+            </div>
+            <span class="navTriggerC">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+    <div class="kaledner">
+        <div id='calendar'></div>
+    </div>
+  
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src='../javascript/main.min.js'></script>
+    <script src='../javascript/kalender.js'></script>
+</body>
+</html>

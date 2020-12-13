@@ -1,0 +1,93 @@
+.mv{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .mv-content{
+        width: 70%;
+        height: 50vh;
+        .first{
+            display: flex;
+            height: 20%;
+            // background: #631A86;
+            align-items: center;
+            justify-content: center;
+            .mvB{
+                font-weight:bold;
+                color: rgb(0, 0, 0);
+                font-size: 4em;
+            }
+            .mvText{
+                color: rgb(0, 0, 0);
+                font-size: 1.5em;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+            .mvText[data-scroll='in']{
+                animation: typing 4s steps(22, end) forwards, blink 1s infinite;
+            }
+        }
+        .mv-mishon{
+            display: flex;
+            height: 20%;
+            //background: #CA6680;
+            align-items: center;
+            justify-content: center;
+            .mvB{
+                font-weight:bold;
+                color: black;
+                font-size: 4em;
+            }
+            .mvText{
+                color: black;
+                font-size: 1.5em;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+            .mvText[data-scroll='in']{
+                animation: typing 4.5s steps(22, end) forwards, blink 1s infinite;
+            }
+        }
+        .mv-vishon{
+            display: flex;
+            height: 20%;
+            //background: #C45AB3;
+            align-items: center;
+            justify-content: center; 
+            .mvB{
+                font-weight:bold;
+                color: rgb(0, 0, 0);
+                font-size: 4em;
+            }
+            .mvText{
+                color: #ffff;
+                font-size: 1.5em;
+                overflow: hidden;
+                white-space: nowrap;
+                width: 90%;
+            }
+            .mvText[data-scroll='in']{
+                animation: typing 4.6s steps(22, end) forwards, blink 1s infinite;
+            }
+        }
+    }
+}
+
+@keyframes typing{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 74%;
+    }
+}
+
+@keyframes blink{
+    0%{
+        border-right: 2px solid transparent;
+    }
+    100%{
+        border-right: 2px solid rgb(255, 255, 255);
+    }
+}

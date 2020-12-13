@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="contact form example">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="container">
+        <div class="logo">
+            <img class="nav-logo" src="../Images/logo.png" alt="">
+        </div>
+        <div id="mainListDiv" class="main_list">
+            <ul class="navlinks">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../Pages/Skolnan.html">Skolnan</a>
+                </li>
+                <li><a href="../Pages/AdventKalender.html">Kalender</a></li>
+                <li><a href="../Contact/index.html">Kontaktá nos</a></li>
+                <li><a href="../Pages/Login.html">LogIn</a></li>
+            </ul>
+        </div>
+        <span class="navTrigger">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+    </div>
+</nav>
+
+  <div class="contact">
+    <div class="contact-content">
+        <div class="content-head">Kontaktá nos!</div>
+        <div class="form-content">
+          <form class="gform" method="POST" data-email="example@email.net"
+          action="https://script.google.com/macros/s/AKfycbwm8bdogubU59uaxU3J4cmoyLH28j6QIgGvrEJd0g/exec">
+
+            <div class="form-elements">
+              <div class="firstgroup">
+                  <div class="pure-group">
+                    <!--<div class="formName" for="name">Name: </div>-->
+                    <div class="formI-box">
+                      <input class="formInput" id="name" name="name" required placeholder="Nómber" />
+                    </div>
+                  </div>
+
+                <div class="pure-group">
+                    <!--<div class="formName" for="email"><em>Your</em> Email Address:</div>-->
+                    <input class="formInput" id="email" name="email" type="email" value="" required placeholder="Yena bo email"/>
+                    <!--<span class="email-invalid" style="display:none">Must be a valid email address</span>-->
+                </div>
+              </div>
+              <div class="pure-grou">
+                <!--<div class="formName" for="message">Mensaje </div>-->
+                <textarea  class="formTextarea" id="message" name="message" rows="3" placeholder=""></textarea>
+              </div>
+        
+              <button>Manda</button>
+            </div>
+        
+            <div class="thankyou_message" style="display:none;">
+                <div class="successText">
+                  Danki pa kontaktá nos! Pronto lo bo haña un respuesta di nos! 
+                </div>
+            </div>
+          </form>
+        </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+
+</body>
+</html>

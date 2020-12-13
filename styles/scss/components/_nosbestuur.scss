@@ -1,0 +1,261 @@
+.bestuur{
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    .bestuur-content{
+        width: 90%;
+        height: 95%;
+        background: #F1FF6E;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: flex-start;
+        @media all and (max-width: 786px) {
+            flex-direction: column;
+        }   
+        .bestuur-box{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            @media screen and (max-width:786px) {
+                height: 50%;
+        }
+            .bestuurTB{
+                margin-left: 10%;
+                width: 70%;
+                height: 20%;
+                background: #30314F;
+                @media screen and (max-width:786px) {
+                        width: 80%;
+                        height: 50%;
+                }
+                .bestuurT{
+                    font-style: 500;
+                    font-weight: bold;
+                    font-size: 2.3em;
+                    letter-spacing: 0.03em;
+                    font-variant: small-caps;
+                    color: #Ffff;
+                    padding:14px;
+                    @media screen and (max-width:786px) {
+                        font-size: 1.5em;
+                        justify-content: center;
+                        display: flex;
+                    }
+                }
+            }
+            .bestuurTB[data-scroll='in']{
+                animation: slideLeft 1s ease-in;
+              }
+
+            .bestuur-content2{
+                margin-top: -12px;
+                margin-left: 50%;
+                width: 30%;
+                height: 10%;
+                padding-left: 2%;
+                background:  #fff;
+                @media all and (max-width: 786px) {
+                    background: none;
+                } 
+                .bestuur-content2T{
+                    font-size: 18px;
+                    line-height: 38px;
+                    display: flex;
+                    color: #3D3D3D;
+                    @media all and (max-width: 786px) {
+                        font-size: 0;
+                    } 
+                }
+            }
+            .bestuur-content2[data-scroll='in']{
+                animation: slideLeft 2s ease-in;
+              }
+        }
+
+        .bestuur-box2{
+            position: relative;
+            width: 90%;
+            height: 100%;
+            left: -40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media all and (max-width: 786px) {
+                left: 22px;
+            } 
+
+            .bestuur-box2Img{
+                width: 45vw;
+                height: 30vw;
+                
+                @media all and (max-width: 786px) {
+                    width: 100%;
+                    height: 100%;
+                } 
+            }
+
+            .bestuur-box2V{
+                position: absolute;
+                width: 100%;
+                height: 90%;
+                padding-left: 8%;
+
+                .bestuur-box2VT{
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 45px;
+                    line-height: 59px;
+                    color: #FFFFFF;
+                    padding: 3%;
+                    @media all and (max-width: 786px) {
+                        font-size: 30px;
+                        padding: 0;
+                    } 
+                }
+
+                .bestuur-box2VT1{
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 24px;
+                    color: #FFFFFF; 
+                    padding: 3%;      
+                    width: 90%; 
+                    @media all and (max-width: 786px) {
+                        padding: 1%;  
+                        font-size: 11px;
+                        line-height: 16px;
+                    }            
+                }
+
+                .bestuurButton{
+                    width: 20%;
+                    height: 12%;
+                    background: #C2E7DA;
+                    margin-left: 65%;
+                    @media all and (max-width: 786px) {
+                        margin-left: 60%;
+                        width: 26%;
+                        height: 14%;
+                    }   
+                    .bestuurBT{
+                        position: relative;
+                        padding-left: 32%;
+                        top: 20%;
+                        text-decoration: none;
+                        font-family: Montserrat;
+                        font-size: 20px;
+                        color: #272727;
+                        cursor: pointer;
+                        @media all and (max-width: 786px) {
+                            padding-left: 30%;
+                            font-size: 15px;
+                        }                          
+                    }
+                }
+
+                .modal {
+                    display: none;
+                    position: fixed;
+                    z-index: 1;
+                    left: 0;
+                    top: 0;
+                    height: 100%;
+                    width: 100%;
+                    overflow: auto;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    z-index: 5000;
+
+                    .modal-content {
+                        margin: 10% auto;
+                        width: 60%;
+                        animation-name: modalopen;
+                        animation-duration: 1s;
+
+                        .modal-header {
+                            background: #25264d;
+                            padding: 0px;
+                            color: #fff;
+                            left: 50px;
+                            top: 25px;
+                            box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.5);
+
+                            .modal-headerT{
+                                position: relative;
+                                margin: 0px;
+                                font-size: 23px;
+                                font-weight: 400;
+                                padding: 20px;
+                                display: flex;
+                                justify-content: center;
+                            }
+
+                            .closeBtn {
+                                position: absolute;
+                                color: #ccc;
+                                float: left;
+                                font-size: 30px;
+                                color: #fff;
+                                cursor: pointer;
+                                left: 95%;
+                                top: 5px;
+                              }
+                        }
+                        .modal-header:hover{
+                            background:#30314F ;
+                        }
+
+                        .modal-body {
+                            padding: 50px 20px;
+                            background: #fff;
+                            .modal-title{
+                                position: relative;
+                                margin: 0px;
+                                font-size: 23px;
+                                font-weight: 400;
+                                padding: 20px;
+                                display: flex;
+                                justify-content: center;
+                                color: black;
+                            }
+                            .modal-text{
+                                position: relative;
+                                margin: 0px;
+                                font-size: 15px;
+                                font-weight: 400;
+                                padding: 20px;
+                                display: flex;
+                                justify-content: center;
+                                text-align: center;
+                                color: black;
+                            }
+
+
+                        }
+                          
+                    }
+                }
+                
+            }
+
+            
+        }
+    }
+}
+
+@keyframes slideLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}

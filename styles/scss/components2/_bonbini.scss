@@ -1,0 +1,65 @@
+.bonbini{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .bon-content{
+        width: 90%;
+        height: 80vh;
+        display: flex;
+        .bonT{
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            .bon-titlte{
+                font-style: normal;
+                font-weight: 300;
+                font-size: 80px;
+                text-transform: capitalize;
+                color: #000000;
+            }
+            .bon-titlte[data-scroll="in"]{
+                animation: fadeIn 1s ease-in;
+            }
+            .bon-text{
+                font-style: normal;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 26px;
+                text-transform: capitalize;
+                color: #000000;
+                width: 90%;
+                padding: 1%;
+            }
+            .bon-hoofd{
+                width: 85%;
+                .bon-hoofdT{
+                    float: right;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 14px;
+                    text-transform: capitalize;
+                    color: #000000;
+                }
+            }
+        }
+        .bonImage{
+            width: 30%;
+            margin-left: 5%;
+        }
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translate3d(0,-20%,0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
