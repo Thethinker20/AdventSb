@@ -25,7 +25,10 @@ $color-box-7 : #de8b3e;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background:#1A1B41;
+    background: url(../../../Images/skolnan1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     .skolnantext{
         position: relative;
         height: 10%;
@@ -37,7 +40,7 @@ $color-box-7 : #de8b3e;
         flex-direction: column;
         .sText{
             font-size: 2em;
-            color: white;
+            color: white; 
             animation: fadeIn 1s ease-in;
         }
         .sTextP{

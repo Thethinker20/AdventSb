@@ -71,70 +71,22 @@ var swiper = new Swiper('.swiper-container', {
   });
 
 
-  (function slider() {
-    var $slides = document.querySelectorAll('.slide');
-    var $controls = document.querySelectorAll('.slider__control');
-    var numOfSlides = $slides.length;
-    var slidingAT = 1300; // sync this with scss variable
-    var slidingBlocked = false;
+  var slideIndex = 0;
+  showSlides();
   
-    [].slice.call($slides).forEach(function($el, index) {
-      var i = index + 1;
-      $el.classList.add('slide-' + i);
-      $el.dataset.slide = i;
-    });
-  
-    [].slice.call($controls).forEach(function($el) {
-      $el.addEventListener('click', controlClickHandler);
-    });
-  
-    function controlClickHandler() {
-      if (slidingBlocked) return;
-      slidingBlocked = true;
-  
-      var $control = this;
-      var isRight = $control.classList.contains('m--right');
-      var $curActive = document.querySelector('.slide.s--active');
-      var index = +$curActive.dataset.slide;
-      (isRight) ? index++ : index--;
-      if (index < 1) index = numOfSlides;
-      if (index > numOfSlides) index = 1;
-      var $newActive = document.querySelector('.slide-' + index);
-  
-      $control.classList.add('a--rotation');
-      $curActive.classList.remove('s--active', 's--active-prev');
-      document.querySelector('.slide.s--prev').classList.remove('s--prev');
-      
-      $newActive.classList.add('s--active');
-      if (!isRight) $newActive.classList.add('s--active-prev');
-      
-  
-      var prevIndex = index - 1;
-      if (prevIndex < 1) prevIndex = numOfSlides;
-  
-      document.querySelector('.slide-' + prevIndex).classList.add('s--prev');
-      setTimeout(function() {
-        $control.classList.remove('a--rotation');
-        slidingBlocked = false;
-      }, slidingAT*0.75);
-    };
-  }());
-  
-  jQuery(document).ready(function($) {
-
-    //Count nr. of square classes
-    var countSquare = $('.square').length;
-  
-    //For each Square found add BG image
-    for (i = 0; i < countSquare; i++) {
-      var firstImage = $('.square').eq([i]);
-      var secondImage = $('.square2').eq([i]);
-  
-      var getImage = firstImage.attr('data-image');
-      var getImage2 = secondImage.attr('data-image');
-  
-      firstImage.css('background-image', 'url(' + getImage + ')');
-      secondImage.css('background-image', 'url(' + getImage2 + ')');
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
     }
-  
-  });
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 8000); // Change image every 2 seconds
+  }
