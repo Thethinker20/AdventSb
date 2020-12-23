@@ -2,6 +2,9 @@
   box-sizing: border-box;
 }
 
+.affix {
+  background-color: #CA6680;
+}
 .slideshow-container {
   width: 100%;
   height: 100vh;
@@ -16,6 +19,7 @@
   
   .mySlides {
     display: none;
+    
     .slideContent{
       position: absolute;
       width: 100%;
@@ -23,11 +27,18 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
     }
     .Tslide1 {
       color: #f2f2f2;
       font-size: 3.5em;
       font-weight: 500;
+      @media all and (max-width: 786px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.5em;
+      }   
     }
     .slide2content{
       position: absolute;
@@ -39,6 +50,10 @@
       .slide2Img{
         width: 60%;
         height: 60vh;
+        @media all and (max-width: 786px) {
+          width: 0px;
+          height: 0px;
+        }   
         .imgCovd{
           width: 100%;
           height: 80vh;
@@ -46,6 +61,11 @@
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
+          @media all and (max-width: 786px) {
+            width: 0;
+            height: 0;
+            background: none;
+          }   
         }
 
       }
@@ -54,6 +74,12 @@
         height: 80vh;
         padding: 180px 200px;
         text-align: right;
+        @media all and (max-width: 786px) {
+          width: 80%;
+          height: 50vh;
+          padding: 80px 20px;
+          text-align: center;
+        }   
         .TitleSlide2{
           width: 110%;
           color: #f2f2f2;
@@ -62,17 +88,32 @@
           text-transform: capitalize;
           line-height: 80px;
           letter-spacing: 0.012em;
+          @media all and (max-width: 786px) {
+            width: 100%;
+            font-size: 2.2em;
+            line-height: 40px;
+            letter-spacing: 0.012em;
+          }   
         }
         .Tslide2 {
           width: 110%;
           color: #f2f2f2;
           font-size: 1.4em;
           font-weight: 500;
+          @media all and (max-width: 786px) {
+            width: 100%;
+            font-size: 1.2em;
+            margin-top: 10px;
+          }   
         }
         .Pslide2{
           margin-top: 50px;
           width: 110%;
           color: #f2f2f2;
+          @media all and (max-width: 786px) {
+            width: 100%;
+            margin-top: 20px;
+          }   
         }
       }
     }
@@ -90,6 +131,7 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+      object-fit:cover;
     }
   }
 }
