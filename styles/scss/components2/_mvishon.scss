@@ -1,75 +1,160 @@
 .mv{
     width: 100%;
-    height: 70vh;
+    height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
     .mv-content{
-        width: 70%;
-        height: 50vh;
-        .first{
+        width: 100%;
+        height: 40vh;
+        background: url(../../../Images/mishon.png) ;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        
+    @media all and (max-width: 1024px) {
+        height: 25vh;
+      }  
+      @media all and (max-width: 768px) {
+        height: 30vh;
+      }  
+      @media all and (max-width: 480px) {
+        height: 40vh;
+      }   
+        .mv-filter{
+            width: 100%;
+            height: 40vh;
+            background:rgba(255, 255, 255, 0.9);
             display: flex;
-            height: 20%;
-            // background: #631A86;
-            align-items: center;
             justify-content: center;
-            .mvB{
-                font-weight:bold;
-                color: rgb(0, 0, 0);
-                font-size: 4em;
-            }
-            .mvText{
-                color: rgb(0, 0, 0);
-                font-size: 1.5em;
-                overflow: hidden;
-                white-space: nowrap;
-            }
-            .mvText[data-scroll='in']{
-                animation: typing 4s steps(22, end) forwards, blink 1s infinite;
-            }
-        }
-        .mv-mishon{
-            display: flex;
-            height: 20%;
-            //background: #CA6680;
             align-items: center;
-            justify-content: center;
-            .mvB{
-                font-weight:bold;
-                color: black;
-                font-size: 4em;
+            flex-direction: column;
+            @media all and (max-width: 1024px) {
+                height: 25vh;
+            }  
+            @media all and (max-width: 768px) {
+                height: 30vh;
+              }  
+              @media all and (max-width: 480px) {
+                height: 35vh;
+              }   
+            .mv-mishon{
+                display: flex;
+                height: 20%;
+                width: 65%;
+                //background: #CA6680;
+                align-items: center;
+                justify-content: center;
+                @media all and (max-width: 1024px) {
+                    width: 96%;
+                }  
+                @media all and (max-width: 768px) {
+                    width: 100%;
+                  }  
+                  @media all and (max-width: 480px) {
+                    width: 110%;
+                  }  
+                .mvB{
+                    font-weight:bold;
+                    color:#631a86;
+                    font-size: 4em;
+                    @media all and (max-width: 768px) {
+                        font-size: 3em;
+                      }  
+                      @media all and (max-width: 480px) {
+                        font-size: 2.5em;
+                      }  
+                }
+                .mvText{
+                    color: black;
+                    font-size: 1.5em;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    @media all and (max-width: 768px) {
+                        font-size: 1.15em;
+                      }  
+                      @media all and (max-width: 480px) {
+                        font-size: 1em;
+                        width: 60%;
+                        height: 10%;
+                        overflow: visible;
+                        text-align: center;
+                        white-space: normal;
+                      }  
+                }
+                .mvText[data-scroll='in']{
+                    @media all and (max-width: 1920px) {
+                        animation: typing 4.5s steps(22, end) forwards, blink 1s infinite;
+                      }  
+                    @media all and (max-width: 1024px) {
+                        animation: typing 4.5s steps(22, end) forwards, blink 1s infinite;
+                      }  
+                    @media all and (max-width: 768px) {
+                        animation: typing 4.5s steps(22, end) forwards, blink 1s infinite;
+                      }  
+                      @media all and (max-width: 420px) {
+                        animation: none;
+                      }  
+                }
             }
-            .mvText{
-                color: black;
-                font-size: 1.5em;
-                overflow: hidden;
-                white-space: nowrap;
-            }
-            .mvText[data-scroll='in']{
-                animation: typing 4.5s steps(22, end) forwards, blink 1s infinite;
+            .mv-vishon{
+                display: flex;
+                height: 20%;
+                width: 70%;
+                align-items: center;
+                justify-content: center; 
+                @media all and (max-width: 1024px) {
+                    width: 103%;
+                }  
+                @media all and (max-width: 768px) {
+                    width: 105%;
+                  }  
+                .mvB{
+                    font-weight:bold;
+                    color:#631a86;
+                    font-size: 4em;
+                    @media all and (max-width: 768px) {
+                        font-size: 3em;
+                      }  
+                      @media all and (max-width: 480px) {
+                        font-size: 2.5em;
+                      } 
+                }
+                .mvText{
+                    font-size: 1.5em;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    width: 90%;
+                    @media all and (max-width: 768px) {
+                        font-size: 1.15em;
+                      }  
+                      @media all and (max-width: 480px) {
+                        font-size: 1em;
+                        width: 60%;
+                        height: 10%;
+                        overflow: visible;
+                        text-align: center;
+                        white-space: normal;
+                      } 
+                }
+                .mvText[data-scroll='in']{
+                    @media all and (max-width: 1920px) {
+                        animation: typing 4.5s steps(22, end) forwards, blink 1s infinite;
+                      }  
+                    @media all and (max-width: 1024px) {
+                        animation: typing 4.5s steps(22, end) forwards, blink 1s infinite;
+                      }  
+                    @media all and (max-width: 768px) {
+                        animation: typing 4.5s steps(22, end) forwards, blink 1s infinite;
+                      }  
+                      @media all and (max-width: 420px) {
+                        animation: none;
+                      }  
+                }
             }
         }
-        .mv-vishon{
-            display: flex;
-            height: 20%;
-            //background: #C45AB3;
-            align-items: center;
-            justify-content: center; 
-            .mvB{
-                font-weight:bold;
-                color: rgb(0, 0, 0);
-                font-size: 4em;
-            }
-            .mvText{
-                font-size: 1.5em;
-                overflow: hidden;
-                white-space: nowrap;
-                width: 90%;
-            }
-            .mvText[data-scroll='in']{
-                animation: typing 4.6s steps(22, end) forwards, blink 1s infinite;
-            }
-        }
+        
     }
 }
 
@@ -87,6 +172,6 @@
         border-right: 2px solid transparent;
     }
     100%{
-        border-right: 2px solid rgb(255, 255, 255);
+        border-right: 2px solid #631a86;
     }
 }

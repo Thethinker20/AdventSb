@@ -7,17 +7,17 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.css">
+    <link rel="stylesheet" href="../fontawesome-free-5.15.1-web/css/all.css">
     <link rel="stylesheet" href="../styles/css/styles.css">
-    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
 </head>
 <body>
-    <nav class="nav">
+    <navMHZ class="navMHZ">
         <div class="container">
             <div class="logo">
-                <img class="nav-logo" src="../Images/logo.png" alt="">
+                <img class="navMHZ-logo" src="../Images/logo.png" alt="">
             </div>
             <div id="mainListDiv" class="main_list">
-                <ul class="navlinks">
+                <ul class="navMHZlinks">
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="../Pages/Skolnan.html">Skolnan</a></li>
                     <li><a href="../Pages/AdventKalender.html">Kalender</a></li>
@@ -25,22 +25,20 @@
                     <li><a href="../Pages/Login.html">LogIn</a></li>
                 </ul>
             </div>
-            <span class="navTrigger">
+            <span class="navMHZTrigger">
                 <i></i>
                 <i></i>
                 <i></i>
             </span>
         </div>
-    </nav>
+    </navMHZ>
     <div class="slideshow-container">
-
         <div class="mySlides fade">
             <div class="slideContent">
-                <div class="Tslide1">Advent School<br>KooralSpecht</div>
+                <div class="Tslide1">Advent School<br>Mahuma-zuid</div>
             </div>
             <img src="../Images/adventSlide1.png" style="width:100%">
         </div>
-        
         <div class="mySlides fade">
             <div class="slide2content">
                 <div class="slide2Img">
@@ -54,9 +52,10 @@
             </div>
           <img src="../Images/back3Slide.png"  style="width:100%">
         </div>
-        
         <div class="mySlides fade">
-            <div class="Tslide3">Caption Three</div>
+            <div class="slide2content">
+                <!-- <div class="Tslide3">Caption Three</div> -->
+            </div>
           <img src="../Images/sliderS.jpg" style="width:100%">
         </div><br>
 
@@ -68,33 +67,29 @@
     </div>         
     <div class="bonbini">
         <div class="bon-content">
+            <div class="ImgBon">
+                <img src="../Images/logoMhZ.png" alt="">
+            </div>
             <div class="bonT">
-                <div class="bon-titlte">Bon Bini</div>
-                <div class="bon-text">Bon bini na nos skol su pagina<br>
-                    aki riba lo bo por haña diferente kos nan ku lo por yuda bu i laga ta mas informá. Nos lo infromá
-                    un i tur na kada skol, kiko ta nos plan nan pa nos sait(pagina). Si bo ke sa mas klek
-                    aki na e boton “Mas” pa bo por haña mas informashon.
-                </div>
-                <div class="bon-hoofd">
-                    <div class="bon-hoofdT">hoofd. Aishel Koster.</div>
+                <div class="bon-titlte">Un kaluroso bon bini</div><br><br>
+                <div class="bon-text">Na adventschool mahuma-zuid, un skol adventista situa riba Kaminda Laurentius M. Mathilda, ku maestronan 
+                    bon eduka, amabel i ku ta kla pa yuda tur alumno di skol.<br><br>
+                    Riba e pagina di adventshool mahuma-zuid lo bo por haña diferente informashon, metanan, actividad i hopi mas.
                 </div>
             </div>
-            <img src="../Images/juf.png" class="bonImage" alt="">
         </div>
     </div>
     <div class="mv">
         <div class="mv-content">
-            <div class="first">
-                <div class="mvB">N</div>
-                <div class="mvText">os di adventschool koraalspecht tin diferente metanan i nos</div>
-            </div>
-            <div class="mv-mishon">
-                <div class="mvB">M</div>
-                <div class="mvText">ishon ta pa forma siudadanonan pa e tera aki i esun selestial</div>
-            </div>
-            <div class="mv-vishon">
-                <div class="mvB">V</div>
-                <div class="mvText">ishon ta pa kada studiante por sobresali den fe, siñansa i servisio.</div>
+            <div class="mv-filter">
+                <div class="mv-mishon">
+                    <div class="mvB">M</div>
+                    <div class="mvText">ishon ta pa forma siudadanonan pa e tera aki i esun selestial</div>
+                </div>
+                <div class="mv-vishon">
+                    <div class="mvB">V</div>
+                    <div class="mvText">ishon ta pa kada studiante por sobresali den fe, siñansa i servisio.</div>
+                </div>
             </div>
         </div>
     </div>
@@ -115,9 +110,9 @@
                     <div class="regla-box2VT1">Nos Reglanan Tei Pa Protege Nos Alumnonan I Nos Maestronan Riba Tereno Di Nos Skol. Kada Un Di Nos Skolnan Tin Su Diferente Reglanan 
                         I Nos Tambe Di AD Koraalspecht Tin Nos Regla Nan. Aki Na Regla Lo Bo Por Haña Tur E Reglanan Di Nos Skol, Lese I Memorise.
                     </div>
-                    <div class="reglaButton" id="modal-btnR">
-                        <a class="reglaBT">Lesa mi</a>
-                    </div>
+                    <a class="reglaButton" id="modal-btnR">
+                        <span class="reglaBT">Lesa mi</span>
+                    </a>
                     <div id="my-modalR" class="modalR">
                         <div class="modal-contentR">
                             <div class="modal-headerR">
@@ -197,33 +192,21 @@
     <div class="KOption">
         <div class="KOption1">
             <div class="Koption-content">
-                <div class="KOPtion-box">
-                    <a href="">
-                        <div class="KOption-img">
-                            <img class="ImgOpt" src="../Images/camera.png" alt="">
-                        </div>
-                        <div class="KOption-title">01. Potret</div>
-                        <div class="KOption-text">Aki lo bo por haña tur potret di nos alumnonan i aktividadnan ku ta pasa na nos skol.</div>
-                    </a>
-                </div>
-                <div class="KOPtion-box1">
-                    <a href="../Pages/AdventKalender.html">
-                        <div class="KOption-img">
-                            <img class="ImgOpt" src="../Images/calendar.png" alt="">
-                        </div>
-                        <div class="KOption-title">02. Kalender</div>
-                        <div class="KOption-text">Den nos kalender nos mayornan i alumnonan lo keda informa di tur aktividad di aña.</div>
-                    </a>
-                </div>
-                <div class="KOPtion-box2">
-                    <a href="../Pages/keNosta.html">
-                        <div class="KOption-img">
-                            <img class="ImgOpt" src="../Images/info.png" alt="">
-                        </div>
+                <a class="KOPtion-box" href="https://drive.google.com/drive/folders/1brx1I5JRxPOii7Ztc0zGokZqlVUBkKkW?usp=sharing">
+                    <i class="fas fa-camera-retro"></i>
+                    <div class="KOption-title">01. Potret</div>
+                    <div class="KOption-text">Aki lo bo por haña tur potret di nos alumnonan i aktividadnan ku ta pasa na nos skol.</div>
+                </a>
+                <a class="KOPtion-box1" href="../Pages/AdventKalender.html">
+                    <i class="fas fa-calendar-alt"></i>
+                    <div class="KOption-title">02. Kalender</div>
+                    <div class="KOption-text">Den nos kalender nos mayornan i alumnonan lo keda informa di tur aktividad di aña.</div>
+                </a>
+                <a href="../Pages/keNosta.html" class="KOPtion-box2">
+                    <i class="fas fa-desktop"></i>
                         <div class="KOption-title">03. Ken nos ta...</div>
                         <div class="KOption-text">Invitashon ta na bo pa lesa i sa mas di tur informashon di adventschool koraalspecht.</div>
-                    </a>
-                </div>
+                </a>
             </div>
         </div>
         <div class="KOption2">

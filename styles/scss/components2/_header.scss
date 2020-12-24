@@ -2,9 +2,6 @@
   box-sizing: border-box;
 }
 
-.affix {
-  background-color: #CA6680;
-}
 .slideshow-container {
   width: 100%;
   height: 100vh;
@@ -33,11 +30,17 @@
       color: #f2f2f2;
       font-size: 3.5em;
       font-weight: 500;
-      @media all and (max-width: 786px) {
+      //iPad
+      @media all and (max-width: 768px) {
+        color: #000000;
+      }  
+      //Smartphone
+      @media all and (max-width: 480px) {
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 2.5em;
+        color: #f2f2f2;
       }   
     }
     .slide2content{
@@ -47,13 +50,30 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      @media all and (max-width: 1024px) {
+        flex-direction: column;
+      }  
+      @media all and (max-width: 768px) {
+        flex-direction: column;
+      }  
       .slide2Img{
         width: 60%;
         height: 60vh;
-        @media all and (max-width: 786px) {
+        @media all and (max-width: 1024px) {
+          width: 100%;
+          height: 100vh;
+          margin-top: 34.2rem;
+        }  
+        @media all and (max-width: 768px) {
+          width: 100%;
+          height: 100vh;
+          margin-top: 25.6rem;
+        }  
+        @media all and (max-width: 480px) {
           width: 0px;
           height: 0px;
         }   
+        
         .imgCovd{
           width: 100%;
           height: 80vh;
@@ -61,7 +81,15 @@
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
-          @media all and (max-width: 786px) {
+          @media all and (max-width: 1024px) {
+            position: absolute;
+            height: 60vh;
+          }  
+          @media all and (max-width: 768px) {
+            position: absolute;
+            height: 60vh;
+          }  
+          @media all and (max-width: 480px) {
             width: 0;
             height: 0;
             background: none;
@@ -74,7 +102,19 @@
         height: 80vh;
         padding: 180px 200px;
         text-align: right;
-        @media all and (max-width: 786px) {
+        @media all and (max-width: 1024px) {
+          position: absolute;
+          width: 80%;
+          height: 50vh;
+          padding: 0px 0px;
+        } 
+        @media all and (max-width: 768px) {
+          position: absolute;
+          width: 80%;
+          height: 50vh;
+          padding: 0px 0px;
+        }  
+        @media all and (max-width: 480px) {
           width: 80%;
           height: 50vh;
           padding: 80px 20px;
@@ -88,19 +128,49 @@
           text-transform: capitalize;
           line-height: 80px;
           letter-spacing: 0.012em;
-          @media all and (max-width: 786px) {
+          @media all and (max-width: 1024px) {
+            width: 100%;
+          }  
+          @media all and (max-width: 768px) {
+            width: 100%;
+          }  
+          @media all and (max-width: 480px) {
             width: 100%;
             font-size: 2.2em;
             line-height: 40px;
             letter-spacing: 0.012em;
           }   
+ 
         }
         .Tslide2 {
           width: 110%;
           color: #f2f2f2;
           font-size: 1.4em;
           font-weight: 500;
-          @media all and (max-width: 786px) {
+          @media all and (max-width: 1024px) {
+            width: 100%;
+          }  
+          @media all and (max-width: 768px) {
+            width: 100%;
+          }  
+          @media all and (max-width: 480px) {
+            width: 100%;
+            font-size: 1.2em;
+            margin-top: 10px;
+          }   
+        }
+        .Tslide3 {
+          width: 110%;
+          color: #f2f2f2;
+          font-size: 1.4em;
+          font-weight: 500;
+          @media all and (max-width: 1024px) {
+            width: 100%;
+          }  
+          @media all and (max-width: 768px) {
+            width: 100%;
+          }  
+          @media all and (max-width: 480px) {
             width: 100%;
             font-size: 1.2em;
             margin-top: 10px;
@@ -110,7 +180,15 @@
           margin-top: 50px;
           width: 110%;
           color: #f2f2f2;
-          @media all and (max-width: 786px) {
+          @media all and (max-width: 1024px) {
+            width: 50%;
+            float: right;
+          }  
+          @media all and (max-width: 768px) {
+            width: 50%;
+            float: right;
+          }  
+          @media all and (max-width: 480px) {
             width: 100%;
             margin-top: 20px;
           }   

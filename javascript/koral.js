@@ -1,13 +1,13 @@
 $(window).scroll(function() {
     if ($(document).scrollTop() > 50) {
-        $('.nav').addClass('affix');
+        $('.navMHZ').addClass('affix');
         console.log("OK");
     } else {
-        $('.nav').removeClass('affix');
+        $('.navMHZ').removeClass('affix');
     }
 });
 
-$('.navTrigger').click(function () {
+$('.navMHZTrigger').click(function () {
     $(this).toggleClass('active');
     console.log("Clicked menu");
     $("#mainListDiv").toggleClass("show_list");
@@ -87,6 +87,6 @@ var swiper = new Swiper('.swiper-container', {
       dots[i].className = dots[i].className.replace(" active", "");
     }
     slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
+     dots[slideIndex-1].className += " active";
     setTimeout(showSlides, 8000); // Change image every 2 seconds
   }
